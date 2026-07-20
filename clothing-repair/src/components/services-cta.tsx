@@ -1,5 +1,6 @@
 import { ArrowRight, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export function ServicesCta() {
   return (
@@ -17,16 +18,18 @@ export function ServicesCta() {
             порадить та назве точну вартість ще до початку роботи.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link href='/#contact'>
             <Button
               size="lg"
               className="group rounded-full bg-background px-7 text-foreground hover:bg-background/90"
             >
-              Записатися на примірку
-              <ArrowRight
-                className="ml-1 size-4 transition-transform group-hover:translate-x-1"
-                aria-hidden="true"
-              />
+                    Записатися на примірку
+                    <ArrowRight
+                        className="ml-1 size-4 transition-transform group-hover:translate-x-1"
+                        aria-hidden="true"
+                    />
             </Button>
+            </Link>
             <Button
               size="lg"
               variant="outline"

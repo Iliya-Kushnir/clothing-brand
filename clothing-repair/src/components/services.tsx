@@ -1,9 +1,11 @@
 import { Scissors, Home, Check } from 'lucide-react'
+import Link from 'next/link'
 
 const pillars = [
   {
     icon: Scissors,
     title: 'Ремонт та реставрація одягу',
+    href: '/services#clothing-repair', // Ссылка на первый блок
     description:
       'Даруємо друге життя улюбленим речам — від простої підгонки до складної реставрації.',
     items: [
@@ -16,6 +18,7 @@ const pillars = [
   {
     icon: Home,
     title: 'Пошив штор та гардин',
+    href: '/services#curtain-sewing', // Ссылка на второй блок
     description:
       'Створюємо текстильний декор, що підкреслює характер вашого інтер’єру.',
     items: [
@@ -43,9 +46,10 @@ export function ServicesSection() {
 
         <div className="mt-14 grid gap-6 md:grid-cols-2">
           {pillars.map((pillar) => (
-            <article
+            <Link
               key={pillar.title}
-              className="group flex flex-col rounded-sm border border-border bg-card p-8 transition-all duration-300 hover:border-accent hover:-translate-y-1 md:p-10"
+              href={pillar.href}
+              className="group flex flex-col rounded-sm border border-border bg-card p-8 transition-all duration-300 hover:border-accent hover:-translate-y-1 md:p-10 cursor-pointer"
             >
               <span className="flex h-14 w-14 items-center justify-center rounded-full bg-accent/40 text-accent-foreground transition-colors group-hover:bg-accent">
                 <pillar.icon className="h-6 w-6" aria-hidden="true" />
@@ -64,7 +68,7 @@ export function ServicesSection() {
                   </li>
                 ))}
               </ul>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

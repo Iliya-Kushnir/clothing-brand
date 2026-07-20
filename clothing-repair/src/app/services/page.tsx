@@ -76,21 +76,27 @@ export default function Page() {
         </div>
       </section>
 
-      <ServiceSection
-        index="01 / Ремонт одягу"
-        icon={Scissors}
-        title="Ремонт одягу"
-        intro="Повертаємо речам другу молодість — акуратно, швидко та з увагою до деталей."
-        items={clothingRepair}
-      />
+      {/* Первый блок с id и отступом для прокрутки */}
+      <div id="clothing-repair" className="scroll-mt-24">
+        <ServiceSection
+          index="01 / Ремонт одягу"
+          icon={Scissors}
+          title="Ремонт одягу"
+          intro="Повертаємо речам другу молодість — акуратно, швидко та з увагою до деталей."
+          items={clothingRepair}
+        />
+      </div>
 
-      <ServiceSection
-        index="02 / Пошив штор"
-        icon={Home}
-        title="Пошив штор"
-        intro="Створюємо текстильний декор під ваш інтерєр — від легких гардин до складних портьєр."
-        items={curtainSewing}
-      />
+      {/* Второй блок с id и отступом для прокрутки */}
+      <div id="curtain-sewing" className="scroll-mt-24">
+        <ServiceSection
+          index="02 / Пошив штор"
+          icon={Home}
+          title="Пошив штор"
+          intro="Створюємо текстильний декор під ваш інтерєр — від легких гардин до складних портьєр."
+          items={curtainSewing}
+        />
+      </div>
 
       <ServicesCta />
     </main>

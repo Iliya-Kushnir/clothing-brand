@@ -28,15 +28,15 @@ const categoryLabels: Record<Category, string> = {
 }
 
 const works: Work[] = [
-  { id: 1, title: 'Штори з натурального льону', category: 'curtains', src: '/works/curtains-1.png', size: 'tall' },
-  { id: 2, title: 'Підшив рукавів пальта', category: 'repair', src: '/works/repair-1.png', size: 'normal' },
-  { id: 3, title: 'Реставрація вишитої сукні', category: 'restoration', src: '/works/restore-1.png', size: 'normal' },
-  { id: 4, title: 'Плісировані штори блекаут', category: 'curtains', src: '/works/curtains-2.png', size: 'normal' },
-  { id: 5, title: 'Заміна блискавки на куртці', category: 'repair', src: '/works/repair-2.png', size: 'normal' },
-  { id: 6, title: 'Оновлення шкіряної сумки', category: 'restoration', src: '/works/restore-2.png', size: 'tall' },
-  { id: 7, title: 'Легкі штори з вуалі', category: 'curtains', src: '/works/curtains-3.png', size: 'normal' },
-  { id: 8, title: 'Звуження брюк по фігурі', category: 'repair', src: '/works/repair-3.png', size: 'tall' },
-  { id: 9, title: 'Реставрація вовняного пальта', category: 'restoration', src: '/works/restore-3.png', size: 'normal' },
+  { id: 1, title: 'Штори з натурального льону', category: 'curtains', src: '/images/curtains-1.png', size: 'tall' },
+  { id: 2, title: 'Підшив рукавів пальта', category: 'repair', src: '/images/repair-1.png', size: 'normal' },
+  { id: 3, title: 'Реставрація вишитої сукні', category: 'restoration', src: '/images/restore-1.png', size: 'normal' },
+  { id: 4, title: 'Плісировані штори блекаут', category: 'curtains', src: '/images/curtains-2.png', size: 'normal' },
+  { id: 5, title: 'Заміна блискавки на куртці', category: 'repair', src: '/images/repair-2.png', size: 'normal' },
+  { id: 6, title: 'Оновлення шкіряної сумки', category: 'restoration', src: '/images/restore-2.png', size: 'tall' },
+  { id: 7, title: 'Легкі штори з вуалі', category: 'curtains', src: '/images/curtains-3.png', size: 'normal' },
+  { id: 8, title: 'Звуження брюк по фігурі', category: 'repair', src: '/images/repair-3.png', size: 'tall' },
+  { id: 9, title: 'Реставрація вовняного пальта', category: 'restoration', src: '/images/restore-3.png', size: 'normal' },
 ]
 
 export function WorksGallery() {

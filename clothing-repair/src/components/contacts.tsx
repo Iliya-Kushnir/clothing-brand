@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import { MapPin, Clock, Phone, Send, MessageCircle, CheckCircle2 } from 'lucide-react'
+import { useMutation } from '@tanstack/react-query'
+import { createOrder } from '@/server/CreateOrder'
 
 const services = [
   'Ремонт та реставрація одягу',
@@ -16,9 +18,27 @@ export function ContactSection() {
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ name: '', phone: '', service: services[0] })
 
+  const { mutate, isPending } = useMutation({
+    mutationFn: createOrder,
+    onSuccess: () => {
+      setSubmitted(true)
+    },
+    onError: (error: any) => {
+      alert(`Помилка: ${error.message}`)
+    }
+  })
+
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    setSubmitted(true)
+    
+    const formData = new FormData()
+    // Ключи должны строго совпадать с названиями колонок в таблице orders в Supabase
+    formData.append("client_name", form.name)
+    formData.append("phone", form.phone)
+    formData.append("watch_model", form.service) 
+    formData.append("description", "Заявка через контактну форму")
+
+    mutate(formData as any)
   }
 
   return (
@@ -151,9 +171,10 @@ export function ContactSection() {
                 </div>
                 <button
                   type="submit"
-                  className="mt-2 inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-medium tracking-wide text-primary-foreground transition-all hover:opacity-90"
+                  disabled={isPending}
+                  className="mt-2 inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-medium tracking-wide text-primary-foreground transition-all hover:opacity-90 disabled:opacity-50"
                 >
-                  Надіслати заявку
+                  {isPending ? "Відправляємо..." : "Надіслати заявку"}
                 </button>
                 <p className="text-center text-xs text-muted-foreground">
                   Натискаючи кнопку, ви погоджуєтесь на обробку даних

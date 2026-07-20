@@ -8,7 +8,7 @@ const navLinks = [
   { label: 'Послуги', href: '/services' },
   { label: 'Переваги', href: '/why-us' },
   { label: 'Роботи', href: '/our-works' },
-  { label: 'Контакти', href: '#contact' },
+  { label: 'Контакти', href: '/#contact' },
 ]
 
 export function SiteHeader() {
