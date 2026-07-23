@@ -22,7 +22,7 @@ export function SiteHeader() {
             <Scissors className="h-4 w-4" aria-hidden="true" />
           </span>
           <span className="font-serif text-xl font-semibold leading-none tracking-tight">
-            Ательє у Наталі
+          Ательє Швейний Ремонт
           </span>
         </Link>
 
@@ -43,7 +43,7 @@ export function SiteHeader() {
           className="hidden items-center gap-2 text-sm font-medium tracking-wide text-foreground transition-colors hover:text-accent-foreground md:flex"
         >
           <Phone className="h-4 w-4" aria-hidden="true" />
-          +38 (067) 123-45-67
+          +38 (050) 775-98-12
         </a>
 
         <button
@@ -75,7 +75,7 @@ export function SiteHeader() {
               className="mt-2 flex items-center gap-2 py-3 text-base font-medium text-foreground"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
-              +38 (067) 123-45-67
+              +38 (050) 775-98-12
             </a>
           </nav>
         </div>

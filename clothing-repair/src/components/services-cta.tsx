@@ -36,7 +36,7 @@ export function ServicesCta() {
               className="rounded-full border-primary-foreground/30 bg-transparent px-7 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
             >
               <Phone className="mr-1 size-4" aria-hidden="true" />
-              +38 (067) 123-45-67
+              +38 (050) 775-98-12
             </Button>
           </div>
         </div>

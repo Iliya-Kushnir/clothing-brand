@@ -65,7 +65,7 @@ export function ContactSection() {
                 <div>
                   <p className="font-medium">Адреса</p>
                   <p className="text-sm text-muted-foreground">
-                    м. Київ, вул. Хрещатик, 1, офіс 12
+                    м. Харків, Центральний ринок, Старі шкіряні ряди.
                   </p>
                 </div>
               </div>
@@ -76,7 +76,7 @@ export function ContactSection() {
                 <div>
                   <p className="font-medium">Графік роботи</p>
                   <p className="text-sm text-muted-foreground">
-                    Пн–Пт: 9:00–19:00 · Сб: 10:00–16:00 · Нд: вихідний
+                    Вівторок–Неділя: 9:00–15:00 · Пн: вихідний
                   </p>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export function ContactSection() {
                 <div>
                   <p className="font-medium">Телефон</p>
                   <a href="tel:+380671234567" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-                    +38 (067) 123-45-67
+                    +38 (050) 775-98-12
                   </a>
                 </div>
               </div>
