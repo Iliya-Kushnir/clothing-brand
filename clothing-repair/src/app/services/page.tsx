@@ -1,8 +1,23 @@
+import type { Metadata } from 'next'
 import { Scissors, Home } from 'lucide-react'
-import { SiteHeader } from '@/components/header'
 import { ServiceSection, type ServiceItem } from '@/components/services-section'
 import { ServicesCta } from '@/components/services-cta'
 
+export const metadata: Metadata = {
+  title: 'Послуги ательє: ремонт одягу та пошив штор на замовлення',
+  description: 'Ціни на ремонт одягу (заміна блискавки, підгонка) та пошив штор, гардин, портьєр. Професійне обладнання та майстри своєї справи.',
+  alternates: {
+    canonical: 'https://atelie.com.ua/services',
+  },
+  openGraph: {
+    title: 'Послуги ательє: ремонт одягу та пошив штор на замовлення',
+    description: 'Ціни на ремонт одягу та пошив штор, гардин, портьєр. Професійні майстри.',
+    url: 'https://atelie.com.ua/services',
+    siteName: 'Ательє',
+    locale: 'uk_UA',
+    type: 'website',
+  },
+}
 const clothingRepair: ServiceItem[] = [
   {
     name: 'Заміна блискавки',

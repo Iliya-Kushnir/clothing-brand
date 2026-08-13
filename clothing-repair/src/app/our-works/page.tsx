@@ -1,5 +1,21 @@
-import { Scissors } from 'lucide-react'
+import type { Metadata } from 'next'
 import { WorksGallery } from '@/components/works-gallery'
+
+export const metadata: Metadata = {
+  title: 'Наші роботи та портфоліо — фото виконаних замовлень',
+  description: 'Подивіться приклади наших робіт: оновлений одяг, відреставровані речі та індивідуальний пошив штор для інтер’єру. 5000+ задоволених клієнтів.',
+  alternates: {
+    canonical: 'https://atelie.com.ua/our-works',
+  },
+  openGraph: {
+    title: 'Наші роботи та портфоліо — фото виконаних замовлень',
+    description: 'Приклади наших робіт: оновлений одяг, реставрація та пошив штор.',
+    url: 'https://atelie.com.ua/our-works',
+    siteName: 'Ательє',
+    locale: 'uk_UA',
+    type: 'website',
+  },
+}
 
 export default function Page() {
   return (
