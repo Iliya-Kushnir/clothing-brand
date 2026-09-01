@@ -39,7 +39,7 @@ export function SiteHeader() {
         </nav>
 
         <a
-          href="tel:+380671234567"
+          href="tel:+380507759812"
           className="hidden items-center gap-2 text-sm font-medium tracking-wide text-foreground transition-colors hover:text-accent-foreground md:flex"
         >
           <Phone className="h-4 w-4" aria-hidden="true" />
@@ -71,7 +71,7 @@ export function SiteHeader() {
               </a>
             ))}
             <a
-              href="tel:+380671234567"
+              href="tel:+380507759812"
               className="mt-2 flex items-center gap-2 py-3 text-base font-medium text-foreground"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />

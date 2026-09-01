@@ -32,7 +32,6 @@ export function ContactSection() {
     e.preventDefault()
     
     const formData = new FormData()
-    // Ключи должны строго совпадать с названиями колонок в таблице orders в Supabase
     formData.append("client_name", form.name)
     formData.append("phone", form.phone)
     formData.append("watch_model", form.service) 
@@ -86,7 +85,7 @@ export function ContactSection() {
                 </span>
                 <div>
                   <p className="font-medium">Телефон</p>
-                  <a href="tel:+380671234567" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+                  <a href="tel:+380507759812" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
                     +38 (050) 775-98-12
                   </a>
                 </div>
@@ -94,15 +93,20 @@ export function ContactSection() {
             </div>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              {/* Viber с рабочим веб-редиректом */}
               <a
-                href="viber://chat?number=%2B380671234567"
+                href="viber://chat?number=380507759812"
+                rel="noopener noreferrer"
                 className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary/60"
               >
                 <MessageCircle className="h-4 w-4" aria-hidden="true" />
                 Viber
               </a>
+              {/* Telegram с правильными атрибутами */}
               <a
-                href="https://t.me/atelievictor"
+                href="https://t.me/+380507759812"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary/60"
               >
                 <Send className="h-4 w-4" aria-hidden="true" />
